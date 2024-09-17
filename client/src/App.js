@@ -5,6 +5,7 @@ import MyFlightsPage from './pages/MyFlightsPage'; // Uçuşlarım sayfası
 
 function App() {
   return (
+    
     <Router>
       <Routes>
 
@@ -13,6 +14,7 @@ function App() {
 
       </Routes>
     </Router>
+    
   );
 }
 
