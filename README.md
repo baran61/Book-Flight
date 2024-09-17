@@ -68,4 +68,34 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Book-Flight
+
+# BOOKING-APP
+
+# Flight Booking Project
+
+## Kurulum
+
+- Backend:
+  1. `cd flight-booking-backend`
+  2. `npm install express`
+  3. `npm install mongoose` 
+  4. `npm install axios`
+  5. `node server.js`
+
+- Frontend:
+  1. `cd flight-booking-client`
+  2. `npm install`
+  3. `npm start`
+
+  -MongoDB veri sorgulama:
+  1.`cd backend`
+  2.`mongosh`
+  3.`use BOOKING-APP`
+  4.`show collections`
+  5.`db.flights.find().pretty()`
+
+## Kullanım
+
+- Uçuşları görüntüleme: `GET /api/flights`
+- Rezervasyon yapma: `POST /api/reserve` (body: `{ "flightName": "Flight A", "flightNumber": "1234" }`)
+- Kişisel uçuşları görüntüleme: `GET /api/my-flights`
