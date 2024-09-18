@@ -80,7 +80,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
   2. `npm install express`
   3. `npm install mongoose` 
   4. `npm install axios`
-  5. `node server.js`
+  5. `node server.js` to start backend
 
 - Frontend:
   1. `cd flight-booking-client`
@@ -96,6 +96,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ## Kullanım
 
-- Uçuşları görüntüleme: `GET /api/flights`
-- Rezervasyon yapma: `POST /api/reserve` (body: `{ "flightName": "Flight A", "flightNumber": "1234" }`)
-- Kişisel uçuşları görüntüleme: `GET /api/my-flights`
+- Uçuşları görüntüleme: `GET localhost:3001/api/flights`
+- Rezervasyon yapma: `POST localhost:3001/api/reserve` (body: `{ "flightName": "Flight A", "flightNumber": "1234" }`)
+- Kişisel uçuşları görüntüleme: `GET localhost:3001/api/my-flights`
