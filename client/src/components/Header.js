@@ -1,11 +1,22 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom'; 
 import './styles.css';
 
 function Header() {
+  const navigate = useNavigate(); // useNavigate kancasını kullandım
+
+  const handleFlightClick = () => {
+    navigate('/my-flights'); // Uçuşlarım sayfasına yönlendirir.
+  };
+
+  const handleLogoClick = () => {
+    navigate('/'); // Ana sayfaya yönlendirir.
+  };
+
   return (
     <div>
       <header className="header">
-        <div className="logo">
+        <div className="logo" onClick={handleLogoClick}>
           <img 
             src="https://img.icons8.com/hatch/64/C850F2/airplane-mode-on.png" 
             alt="airplane-mode-on"
@@ -26,10 +37,11 @@ function Header() {
             className="icon"
           />
           <h4>Joane Smith</h4>
+          <button onClick={handleFlightClick} className="flights-button">Uçuşlarım</button>
         </div>
       </header>
     </div>
-  )
+  );
 }
 
 export default Header;

@@ -15,7 +15,9 @@ function Filter() {
     const fetchFlights = async () => {
       try {
         const response = await axios.get('http://localhost:3001/api/flights');
-        setFlights(response.data.flights || []);
+        const flightsData = response.data.flights || [];
+        setFlights(flightsData);
+        setFilteredFlights(flightsData);          // İlk yüklendiğinde tüm uçuşları göster
         setLoading(false);
       } catch (error) {
         console.error('Uçuş verileri çekilemedi!', error);
@@ -42,7 +44,7 @@ function Filter() {
     setFilteredFlights(newFilteredFlights);
   };
 
-  const handleKeyDown = (event) => {  //Enter'a basmak buttonu tetikler.
+  const handleKeyDown = (event) => {  // Enter'a basmak buttonu tetikler.
     if (event.key === 'Enter') {
       handleSearch();
     }
@@ -89,7 +91,7 @@ function Filter() {
         />
       </div>
 
-      <button className="search-btn" onClick={handleSearch}>
+      <button className="flights-button" onClick={handleSearch}>
         Book Flights
       </button>
 

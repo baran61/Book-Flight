@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between; 
     align-items: center; 
-    background-color: #E6E6E6; 
+    background-color: #c8b5d4; 
     padding: 0.3rem 0.4rem; 
     color: #333; 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
@@ -69,6 +69,33 @@
   margin-right: 8px;
 }
 
+.flights-button {
+  background-color: #7950f2;
+  color: white;
+  border: none;
+  border-radius: 50px; /* Yuvarlak köşeler */
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold; /* Kalın yazı */
+  transition: background-color 0.3s, transform 0.3s; /* Geçiş efektleri */
+  display: flex;
+  align-items: center;
+}
+
+.flights-button:hover {
+  background-color: #6741d9;
+  transform: scale(1.05);   /* Hover efekti ile butonu büyütme */
+}
+
+.flights-button:active {
+  transform: scale(0.95);   /* Butona tıklanırken küçültme efekti */
+}
+
+.flights-button img {
+  margin-right: 8px;        /* İkon ve metin arasında boşluk */
+}
+
 .filter-header h2 {
   margin: 0;
 }
@@ -103,4 +130,76 @@
   border: 1px solid #ddd;
   border-radius: 4px;
   flex: 1;
+}
+
+
+/* Flight List Css */
+
+.flight-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.flight-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.flight-header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.flight-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.flight-times {
+  display: flex;
+  gap: 40px;
+}
+
+.departure, .arrival {
+  font-size: 14px;
+}
+
+.airline {
+  text-align: center;
+}
+
+.airline img {
+  height: 60px;
+  margin-bottom: 5px;
+}
+
+.flight-pricing {
+  text-align: right;
+}
+
+.book-flight {
+  background-color: #5f2eea;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.flight-footer {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.details-button {
+  background-color: #eaeaea;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
 }
