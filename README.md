@@ -98,4 +98,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 - Uçuşları görüntüleme: `GET localhost:3001/api/flights`
 - Rezervasyon yapma: `POST localhost:3001/api/reserve` (body: `{ "flightName": "Flight A", "flightNumber": "1234" }`)
-- Kişisel uçuşları görüntüleme: `GET localhost:3001/api/my-flights`
+- Kişisel uçuşları görüntüleme: `GET localhost:3000/api/my-flights`

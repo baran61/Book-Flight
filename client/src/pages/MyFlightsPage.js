@@ -4,7 +4,7 @@ import MyFlights from '../components/MyFlights'
 function MyFlightsPage() {
   return (
     <div>
-      <Header/>
+      
       <MyFlights/>
     </div>
   )

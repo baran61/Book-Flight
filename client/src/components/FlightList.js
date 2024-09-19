@@ -44,7 +44,7 @@ function FlightList({ flights }) {
             </div>
           </div>
           <div className="flight-footer">
-            <button className="details-button">Detayları Gör</button>
+            <button className="book-flight">Detayları Gör</button>
           </div>
         </div>
       ))}

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import FlightList from './FlightList';
+import './styles.css';
 
 function Filter() {
   const [flights, setFlights] = useState([]);
@@ -50,8 +51,8 @@ function Filter() {
     }
   };
 
-  if (loading) return <p>Yükleniyor...</p>;
-  if (error) return <p>Bir hata oluştu: {error.message}</p>;
+  if (loading) return <p> Yükleniyor... </p>;
+  if (error) return <p> Bir hata oluştu: {error.message}</p>;
 
   return (
     <div className="filter-container">
@@ -91,7 +92,7 @@ function Filter() {
         />
       </div>
 
-      <button className="flights-button" onClick={handleSearch}>
+      <button className="book-flight" onClick={handleSearch}>
         Book Flights
       </button>
 
