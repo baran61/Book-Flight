@@ -80,19 +80,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
   2. `npm install express`
   3. `npm install mongoose` 
   4. `npm install axios`
-  5. `node server.js` to start backend
+  5. `node server.js to start backend` 
 
 - Frontend:
   1. `cd flight-booking-client`
   2. `npm install`
   3. `npm start`
 
-  -MongoDB veri sorgulama:
-  1.`cd backend`
-  2.`mongosh`
-  3.`use BOOKING-APP`
-  4.`show collections`
-  5.`db.flights.find().pretty()`
+- MongoDB veri sorgulama:
+  1. `brew list | grep mongodb , MongoDB'nin Homebrew üzerinden kurulup kurulmadığını kontrol edin`
+  2. `brew services start mongodb/brew/mongodb-community  mongodb başlatın`
+  3. `brew services stop mongodb/brew/mongodb-community   mongodb durdurulur`
+  4. `cd backend noder server.js`
+  5. `brew service list   bağlantı durumunu kontrol eder`
+  
+ 
 
 ## Kullanım
 

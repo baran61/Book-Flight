@@ -3,8 +3,23 @@ const cors = require('cors');
 const app = express();
 const port = 3001;
 const axios = require('axios');
+const flightRoutes = require('./models/Flights');
+require('dotenv').config()
+
+app.use(express.json()); // JSON verilerini almak için middleware
+
+app.use('/api/flights', flightRoutes);
 
 app.use(cors()); // CORS'u aktif hale getirme fonksiyonu
+
+const mongoose = require('mongoose');
+
+// MongoDB bağlantısı
+const mongoUri = process.env.DB_URI;  // MongoDB adresinizi buraya yazın
+
+mongoose.connect(process.env.DB_URI)
+  .then(() => console.log('MongoDB connected'))
+  .catch(err => console.error('MongoDB connection error:', err));
 
 const API_URL = 'https://api.schiphol.nl/public-flights/flights?includedelays=false&page=0&sort=%2BscheduleTime'; // API Adresi
 
