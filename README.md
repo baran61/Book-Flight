@@ -92,7 +92,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
   2. `brew services start mongodb/brew/mongodb-community  mongodb başlatın`
   3. `brew services stop mongodb/brew/mongodb-community   mongodb durdurulur`
   4. `cd backend noder server.js`
-  5. `brew service list   bağlantı durumunu kontrol eder`
+  5. `brew services list   bağlantı durumunu kontrol eder`
   
  
 
@@ -101,3 +101,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Uçuşları görüntüleme: `GET localhost:3001/api/flights`
 - Rezervasyon yapma: `POST localhost:3001/api/reserve` (body: `{ "flightName": "Flight A", "flightNumber": "1234" }`)
 - Kişisel uçuşları görüntüleme: `GET localhost:3000/api/my-flights`
+
+## Görünüm
+ ![Uçak Rezervasyonlarının yapıldığı ve filtrelendiği ana ekran sayfası](./client/src/assests/1.png)
+ ![My Rezervations sayfası, yapılan rezervasyonların gösterildiği ve fiyatlarının listelendiği sayfa](./client/src/assests/2.png)
+ ![MongoDB ve Backend'in bağlantı kontrolü](./client/src/assests/3.png)
+
+
+
